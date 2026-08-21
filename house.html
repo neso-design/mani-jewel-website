@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css?v=20260821c" />
 <style>
 /* Timeline */
 .timeline { position: relative; max-width: 1100px; margin: 0 auto; }
@@ -97,6 +97,49 @@
 @media (max-width: 1000px) { .pillars { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 620px) { .pillars { grid-template-columns: 1fr; } }
 
+/* 5 Cs panel */
+.cs-panel {
+  margin-top: clamp(56px, 8vh, 88px);
+  border-radius: var(--radius-lg);
+  padding: clamp(36px, 5vw, 64px);
+  background:
+    radial-gradient(900px 420px at 85% 0%, rgba(84, 184, 197, 0.18), transparent 60%),
+    radial-gradient(700px 400px at 10% 100%, rgba(255, 255, 255, 0.9), transparent 65%),
+    var(--mani-blue-mist);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: var(--shadow-soft);
+}
+.cs-head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; margin-bottom: 44px; }
+.cs-head .lede { margin: 0 auto; }
+.cs-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.cs-card {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: var(--radius);
+  padding: 30px 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cs-card:hover { transform: translateY(-6px); background: rgba(255, 255, 255, 0.85); border-color: var(--mani-blue); box-shadow: var(--shadow-card); }
+.cs-card b {
+  font-family: var(--font-display);
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 1;
+  color: var(--mani-blue-deep);
+}
+.cs-card b sup { font-size: 0.38em; font-weight: 400; color: var(--mani-blue); }
+.cs-card h4 { font-family: var(--font-display); font-weight: 400; font-size: 16.5px; letter-spacing: 0.02em; }
+.cs-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+@media (max-width: 1080px) { .cs-grid { grid-template-columns: repeat(2, 1fr); } .cs-grid .cs-card:last-child { grid-column: span 2; } }
+@media (max-width: 560px) { .cs-grid { grid-template-columns: 1fr; } .cs-grid .cs-card:last-child { grid-column: span 1; } }
+
 /* Brand family */
 .family-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); border-radius: var(--radius-lg); overflow: hidden; }
 .family-cell { background: var(--porcelain); padding: 48px 34px; display: flex; flex-direction: column; gap: 10px; transition: background 0.4s; }
@@ -128,6 +171,7 @@
       <a href="house.html" class="active">About Us</a>
       <a href="products.html">Products</a>
       <a href="services.html">Services</a>
+      <a href="partners.html">Partners</a>
       <a href="maniworld.html">Manufacturing</a>
       <a href="locations.html">Locations</a>
       <a href="leadership.html">Leadership</a>
@@ -152,11 +196,13 @@
 <div class="mobile-menu">
   <a href="house.html">About <em>Us</em></a>
   <a href="products.html"><em>Products</em></a>
+  <a href="partners.html">Partner <em>With Us</em></a>
   <a href="maniworld.html">Mani <em>World</em></a>
   <a href="locations.html"><em>Locations</em></a>
   <a href="leadership.html"><em>Leadership</em></a>
   <a href="news.html">News</a>
   <a href="journal.html">Journal</a>
+  <a href="faq.html">FAQ</a>
   <a href="careers.html">Careers</a>
   <a href="contact.html">Enquire</a>
 </div>
@@ -232,6 +278,20 @@
       <div class="pillar reveal reveal-d1"><i>— II</i><h3>Peace of Mind</h3><p>Every step is documented and openly shared. Traceable origins, transparent craft — because brilliance means more when its journey is known.</p></div>
       <div class="pillar reveal reveal-d2"><i>— III</i><h3>Expert Guidance</h3><p>Five decades of diamond mastery inform every consultation — from stone selection to collection planning for retailers across India.</p></div>
       <div class="pillar reveal reveal-d3"><i>— IV</i><h3>Inspiring Assortment</h3><p>Necklace sets, pendant sets, tanmaniya, bangles, rings and earrings — in yellow, white, rose and green gold, platinum and silver, across every diamond shape.</p></div>
+    </div>
+    <div class="cs-panel reveal">
+      <div class="cs-head">
+        <img class="mono-divider" src="assets/img/monogram.png" alt="" />
+        <h3 class="h-lg">The <em>5 Cs of the House.</em></h3>
+        <p class="lede">Beyond the four Cs of a diamond, the house lives by five of its own.</p>
+      </div>
+      <div class="cs-grid">
+        <div class="cs-card"><b>C<sup>1</sup></b><h4>Customer Centric</h4><p>Our partners sit at the centre of every decision — their needs shape ours.</p></div>
+        <div class="cs-card"><b>C<sup>2</sup></b><h4>Continual Improvement</h4><p>Every day at the bench, the wheel and the desk, we get a little better.</p></div>
+        <div class="cs-card"><b>C<sup>3</sup></b><h4>Care</h4><p>For the people of the house, the partners we serve and the pieces we make.</p></div>
+        <div class="cs-card"><b>C<sup>4</sup></b><h4>Commitment</h4><p>We stand by our promises — consistent value, delivered with integrity.</p></div>
+        <div class="cs-card"><b>C<sup>5</sup></b><h4>Creativity</h4><p>Imagination that challenges convention and sets new standards in the craft.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -336,6 +396,7 @@
         <li><a href="maniworld.html">Mani World</a></li>
         <li><a href="locations.html">Locations</a></li>
         <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="partners.html">Partner With Us</a></li>
         <li><a href="careers.html">Careers</a></li>
       </ul>
     </div>
@@ -355,6 +416,8 @@
       <ul>
         <li><a href="news.html">News</a></li>
         <li><a href="journal.html">Journal</a></li>
+        <li><a href="faq.html">Partner FAQ</a></li>
+        <li><a href="sourcing.html">Responsible Sourcing</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="contact.html">Privacy Policy</a></li>
         <li><a href="contact.html">Terms &amp; Conditions</a></li>
@@ -369,6 +432,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=20260821c"></script>
 </body>
 </html>

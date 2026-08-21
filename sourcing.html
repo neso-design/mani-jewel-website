@@ -3,55 +3,36 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Enquire — Mani Jewel</title>
-<meta name="description" content="Get in touch with Mani Jewel — wholesale programmes, custom commissions and partnerships. We respond within the same working day." />
+<title>Responsible Sourcing — Mani Jewel</title>
+<meta name="description" content="Mani Jewel's responsible sourcing commitments — Kimberley Process compliance, RJC membership, BIS hallmarking, ISO 9001, conflict-free warranties and solar-powered manufacturing." />
 <link rel="icon" href="assets/img/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css?v=20260821c" />
 <style>
-.contact-wrap { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(40px, 6vw, 100px); align-items: start; }
-.contact-side { display: flex; flex-direction: column; gap: 34px; position: sticky; top: calc(var(--nav-h) + 32px); }
-.c-block h4 { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--mani-blue-deep); margin-bottom: 12px; font-weight: 500; }
-.c-block p, .c-block a { font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
-.c-block a:hover { color: var(--mani-blue-deep); }
-
-.contact-form {
-  background: var(--white);
-  border: 1px solid var(--hairline);
-  border-radius: var(--radius-lg);
-  padding: clamp(28px, 4vw, 52px);
-  box-shadow: var(--shadow-card);
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+.policy-list { display: flex; flex-direction: column; max-width: 860px; }
+.policy-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 28px;
+  padding: 30px 4px;
+  border-bottom: 1px solid var(--hairline);
 }
-.f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.f-field { display: flex; flex-direction: column; gap: 8px; }
-.f-field label { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-mute); }
-.f-field input, .f-field select, .f-field textarea {
-  font-family: var(--font-text);
-  font-size: 15px;
+.policy-item:first-child { border-top: 1px solid var(--hairline); }
+.policy-item i {
+  font-style: normal;
+  font-family: var(--font-display);
   font-weight: 300;
-  color: var(--ink);
-  padding: 15px 18px;
-  border: 1px solid rgba(27, 25, 24, 0.16);
-  border-radius: 12px;
-  background: var(--porcelain);
-  outline: none;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 20px;
+  color: var(--mani-blue-deep);
 }
-.f-field input:focus, .f-field select:focus, .f-field textarea:focus {
-  border-color: var(--mani-blue);
-  box-shadow: 0 0 0 4px var(--mani-blue-soft);
-}
-.f-field textarea { min-height: 140px; resize: vertical; }
-@media (max-width: 900px) { .contact-wrap { grid-template-columns: 1fr; } .contact-side { position: static; } .f-row { grid-template-columns: 1fr; } }
+.policy-item h3 { font-size: 20px; font-weight: 400; margin-bottom: 8px; }
+.policy-item p { font-size: 14.5px; color: var(--ink-soft); max-width: 62ch; }
+@media (max-width: 640px) { .policy-item { grid-template-columns: 1fr; gap: 8px; } }
 </style>
 </head>
 <body>
-
 <header class="lp-header">
   <div class="lp-bar">
     <a class="lp-logo" href="index.html" aria-label="Mani Jewel — Home">
@@ -66,7 +47,7 @@
       <a href="locations.html">Locations</a>
       <a href="leadership.html">Leadership</a>
       <a href="news.html">News</a>
-      <a href="contact.html" class="active">Contact Us</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
     <div class="lp-actions">
       <button class="icon-btn search-toggle" aria-label="Search" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
@@ -87,6 +68,7 @@
   <a href="house.html">About <em>Us</em></a>
   <a href="products.html"><em>Products</em></a>
   <a href="partners.html">Partner <em>With Us</em></a>
+  <a href="services.html"><em>Services</em></a>
   <a href="maniworld.html">Mani <em>World</em></a>
   <a href="locations.html"><em>Locations</em></a>
   <a href="leadership.html"><em>Leadership</em></a>
@@ -98,73 +80,44 @@
 </div>
 
 <!-- INTRO -->
-<section class="section" style="padding-top:clamp(48px,8vh,90px);padding-bottom:48px">
+<section class="section" style="padding-bottom:44px">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow reveal">Enquire</span>
-      <h1 class="h-hero reveal reveal-d1" style="font-size:clamp(40px,6vw,84px)">Let's craft<br /><em>together.</em></h1>
-      <p class="lede reveal reveal-d2">Wholesale programmes, custom commissions, press or partnership — write to the house and we will respond, usually within the same working day.</p>
+      <span class="eyebrow reveal">Responsible Sourcing</span>
+      <h1 class="h-hero reveal reveal-d1" style="font-size:clamp(38px,5.4vw,76px)">Brilliance,<br /><em>answerable.</em></h1>
+      <p class="lede reveal reveal-d2">A diamond's journey should stand up to any question. These are the commitments the house makes on every stone and every gram of gold — the ones our partners' compliance teams ask about, published here so they don't have to.</p>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- COMMITMENTS -->
 <section class="section" style="padding-top:0">
-  <div class="container contact-wrap">
-    <aside class="contact-side reveal">
-      <div class="c-block">
-        <h4>Write</h4>
-        <p><a href="mailto:info@manijewel.com">info@manijewel.com</a><br /><a href="mailto:account@mepl.world">account@mepl.world</a> <span class="small">(Mani Export)</span></p>
-      </div>
-      <div class="c-block">
-        <h4>Call</h4>
-        <p><a href="tel:+917420073011">+91 74200 73011</a> <span class="small">(Mani Jewel)</span><br /><a href="tel:02612548725">0261 254 8725</a> <span class="small">(Mani Export, Surat)</span></p>
-      </div>
-      <div class="c-block">
-        <h4>Visit</h4>
-        <p><b style="font-weight:500">Mumbai (Head Office)</b> — 13/14, Girikunj Industrial Estate, Near Paper Box, Mahakali Caves Road, Andheri East, Mumbai – 400093<br />
-        <b style="font-weight:500">Mani World (Factory)</b> — Ground Floor, Plot No. Q1–Q4, Gujarat Hira Bourse, GHB Gem &amp; Jewellery Park, Magdalla Road, Ichhapore Bhatpor, Surat – 394510<br />
-        <b style="font-weight:500">Delhi</b> — 2442, 1st Floor, Gali No. 10, Near Gurudwara, Baidanpura, Karol Bagh, New Delhi – 110005<br />
-        <b style="font-weight:500">Chennai</b> — 501 A, Siva Building, Opp. Joy Alukkas, Krishnan Road, Off North Usman Road, T. Nagar, Chennai – 600017<br />
-        <a class="text-link" href="locations.html" style="margin-top:8px;display:inline-block">All locations</a></p>
-      </div>
-      <div class="c-block">
-        <h4>Follow</h4>
-        <p><a href="https://instagram.com/mani.jewel" target="_blank" rel="noopener">Instagram</a> · <a href="https://in.linkedin.com/company/mani-jewels" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.facebook.com/manijeweldiamondjewellery" target="_blank" rel="noopener">Facebook</a></p>
-      </div>
-    </aside>
-
-    <form class="contact-form reveal reveal-d1" onsubmit="event.preventDefault();this.innerHTML='<div style=&quot;text-align:center;padding:60px 20px&quot;><p class=&quot;h-md&quot; style=&quot;font-family:var(--font-display)&quot;>Thank you.</p><p class=&quot;lede&quot; style=&quot;margin-top:12px&quot;>Your enquiry is with the house — we will reply within the same working day.</p></div>'">
-      <div class="f-row">
-        <div class="f-field"><label for="fn">First name</label><input id="fn" type="text" required /></div>
-        <div class="f-field"><label for="ln">Last name</label><input id="ln" type="text" required /></div>
-      </div>
-      <div class="f-row">
-        <div class="f-field"><label for="em">Email</label><input id="em" type="email" required /></div>
-        <div class="f-field"><label for="ph">Phone</label><input id="ph" type="tel" /></div>
-      </div>
-      <div class="f-row">
-        <div class="f-field"><label for="cty">City</label><input id="cty" type="text" placeholder="We cater all across India" /></div>
-        <div class="f-field"><label for="sub">Enquiry type</label>
-          <select id="sub">
-            <option>Wholesale programme</option>
-            <option>Custom commission</option>
-            <option>Become a retail partner</option>
-            <option>Request the current stock sheet</option>
-            <option>Request the full catalogue</option>
-            <option>Press &amp; media</option>
-            <option>Careers</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-      <div class="f-field"><label for="msg">Message</label><textarea id="msg" placeholder="Tell us about the collection you have in mind…" required></textarea></div>
-      <button class="btn btn-primary" type="submit" style="align-self:flex-start">Send enquiry <span class="arrow">→</span></button>
-      <p class="small">By writing to us you agree to be contacted about your enquiry. We never share your details.</p>
-    </form>
+  <div class="container">
+    <div class="policy-list reveal">
+      <div class="policy-item"><i>KP</i><div><h3>Kimberley Process compliance</h3><p>Rough diamonds are sourced exclusively through Kimberley Process Certification Scheme channels, with system-of-warranties declarations maintained on invoices through the chain of custody.</p></div></div>
+      <div class="policy-item"><i>RJC</i><div><h3>Responsible Jewellery Council membership</h3><p>The house is a member of the RJC, upholding its Code of Practices across ethical, social, human-rights and environmental conduct — from sourcing to manufacturing to trading.</p></div></div>
+      <div class="policy-item"><i>Conflict-free</i><div><h3>Conflict-free warranty</h3><p>We warrant that our diamonds are purchased from legitimate sources not involved in funding conflict, in compliance with United Nations resolutions and applicable national law.</p></div></div>
+      <div class="policy-item"><i>BIS · ISO</i><div><h3>Certified metal and process</h3><p>Gold is BIS hallmarked; the house operates under ISO 9001 quality management for diamond manufacturing, importing and exporting. Stones are graded in-house with Sarin precision planning.</p></div></div>
+      <div class="policy-item"><i>Solar</i><div><h3>Lower-footprint manufacturing</h3><p>Mani World, the flagship factory, runs substantially on renewable solar energy — jewellery manufacturing with a deliberately lighter footprint.</p></div></div>
+      <div class="policy-item"><i>People</i><div><h3>Artisan welfare</h3><p>Over 2,000 artisans work in light-filled, campus-style facilities with fair, documented employment — many have grown with the house for decades, some across generations.</p></div></div>
+      <div class="policy-item"><i>Traceable</i><div><h3>Documented custody</h3><p>Every step from rough stone to finished piece happens inside the house — cutting at Mani Empire, grading in-house, manufacture at Mani World — so custody is short, documented and answerable.</p></div></div>
+    </div>
+    <p class="small reveal" style="margin-top:34px">A formal copy of the house's sourcing policy for vendor-onboarding files is available to partners on request — <a href="contact.html" style="color:var(--mani-blue-deep)">write to the house</a>.</p>
   </div>
 </section>
 
+<!-- CTA -->
+<section class="section band-mist">
+  <div class="container cta-band">
+    <div>
+      <span class="eyebrow reveal">See it in person</span>
+      <h2 class="h-xl reveal reveal-d1">The factory behind<br /><em>the promise.</em></h2>
+    </div>
+    <div class="cta-actions reveal reveal-d2">
+      <a class="btn btn-primary" href="maniworld.html">Enter Mani World <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
 <footer class="footer">
   <div class="footer-glow"></div>
   <div class="footer-top">

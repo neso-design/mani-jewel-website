@@ -3,55 +3,33 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Enquire — Mani Jewel</title>
-<meta name="description" content="Get in touch with Mani Jewel — wholesale programmes, custom commissions and partnerships. We respond within the same working day." />
+<title>Partner With Us — Mani Jewel</title>
+<meta name="description" content="Why retailers partner with Mani Jewel — a fully integrated house from rough stone to retail counter, one dedicated desk per partner, hundreds of live styles, and capacity for bulk and repeat orders." />
 <link rel="icon" href="assets/img/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css?v=20260821c" />
 <style>
-.contact-wrap { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(40px, 6vw, 100px); align-items: start; }
-.contact-side { display: flex; flex-direction: column; gap: 34px; position: sticky; top: calc(var(--nav-h) + 32px); }
-.c-block h4 { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--mani-blue-deep); margin-bottom: 12px; font-weight: 500; }
-.c-block p, .c-block a { font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
-.c-block a:hover { color: var(--mani-blue-deep); }
-
-.contact-form {
+.pillars { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+.pillar {
   background: var(--white);
   border: 1px solid var(--hairline);
   border-radius: var(--radius-lg);
-  padding: clamp(28px, 4vw, 52px);
-  box-shadow: var(--shadow-card);
+  padding: 40px 36px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 14px;
+  transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.f-field { display: flex; flex-direction: column; gap: 8px; }
-.f-field label { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-mute); }
-.f-field input, .f-field select, .f-field textarea {
-  font-family: var(--font-text);
-  font-size: 15px;
-  font-weight: 300;
-  color: var(--ink);
-  padding: 15px 18px;
-  border: 1px solid rgba(27, 25, 24, 0.16);
-  border-radius: 12px;
-  background: var(--porcelain);
-  outline: none;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-.f-field input:focus, .f-field select:focus, .f-field textarea:focus {
-  border-color: var(--mani-blue);
-  box-shadow: 0 0 0 4px var(--mani-blue-soft);
-}
-.f-field textarea { min-height: 140px; resize: vertical; }
-@media (max-width: 900px) { .contact-wrap { grid-template-columns: 1fr; } .contact-side { position: static; } .f-row { grid-template-columns: 1fr; } }
+.pillar:hover { transform: translateY(-6px); box-shadow: var(--shadow-soft); border-color: var(--mani-blue); }
+.pillar i { font-style: normal; font-family: var(--font-display); font-size: 18px; color: var(--mani-blue-deep); }
+.pillar h3 { font-size: 23px; font-weight: 300; }
+.pillar p { font-size: 14.5px; color: var(--ink-soft); }
+@media (max-width: 800px) { .pillars { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
-
 <header class="lp-header">
   <div class="lp-bar">
     <a class="lp-logo" href="index.html" aria-label="Mani Jewel — Home">
@@ -61,12 +39,12 @@
       <a href="house.html">About Us</a>
       <a href="products.html">Products</a>
       <a href="services.html">Services</a>
-      <a href="partners.html">Partners</a>
+      <a href="partners.html" class="active">Partners</a>
       <a href="maniworld.html">Manufacturing</a>
       <a href="locations.html">Locations</a>
       <a href="leadership.html">Leadership</a>
       <a href="news.html">News</a>
-      <a href="contact.html" class="active">Contact Us</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
     <div class="lp-actions">
       <button class="icon-btn search-toggle" aria-label="Search" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
@@ -87,6 +65,7 @@
   <a href="house.html">About <em>Us</em></a>
   <a href="products.html"><em>Products</em></a>
   <a href="partners.html">Partner <em>With Us</em></a>
+  <a href="services.html"><em>Services</em></a>
   <a href="maniworld.html">Mani <em>World</em></a>
   <a href="locations.html"><em>Locations</em></a>
   <a href="leadership.html"><em>Leadership</em></a>
@@ -98,73 +77,94 @@
 </div>
 
 <!-- INTRO -->
-<section class="section" style="padding-top:clamp(48px,8vh,90px);padding-bottom:48px">
+<section class="section" style="padding-bottom:44px">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow reveal">Enquire</span>
-      <h1 class="h-hero reveal reveal-d1" style="font-size:clamp(40px,6vw,84px)">Let's craft<br /><em>together.</em></h1>
-      <p class="lede reveal reveal-d2">Wholesale programmes, custom commissions, press or partnership — write to the house and we will respond, usually within the same working day.</p>
+      <span class="eyebrow reveal">Partner With Us</span>
+      <h1 class="h-hero reveal reveal-d1" style="font-size:clamp(38px,5.4vw,76px)">Why retailers<br /><em>choose the house.</em></h1>
+      <p class="lede reveal reveal-d2">8 of India's 10 biggest jewellery retail chains and 3,000+ independent jewellers buy from Mani Jewel. Here is what they get — answered the way a buyer actually asks.</p>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section" style="padding-top:0">
-  <div class="container contact-wrap">
-    <aside class="contact-side reveal">
-      <div class="c-block">
-        <h4>Write</h4>
-        <p><a href="mailto:info@manijewel.com">info@manijewel.com</a><br /><a href="mailto:account@mepl.world">account@mepl.world</a> <span class="small">(Mani Export)</span></p>
-      </div>
-      <div class="c-block">
-        <h4>Call</h4>
-        <p><a href="tel:+917420073011">+91 74200 73011</a> <span class="small">(Mani Jewel)</span><br /><a href="tel:02612548725">0261 254 8725</a> <span class="small">(Mani Export, Surat)</span></p>
-      </div>
-      <div class="c-block">
-        <h4>Visit</h4>
-        <p><b style="font-weight:500">Mumbai (Head Office)</b> — 13/14, Girikunj Industrial Estate, Near Paper Box, Mahakali Caves Road, Andheri East, Mumbai – 400093<br />
-        <b style="font-weight:500">Mani World (Factory)</b> — Ground Floor, Plot No. Q1–Q4, Gujarat Hira Bourse, GHB Gem &amp; Jewellery Park, Magdalla Road, Ichhapore Bhatpor, Surat – 394510<br />
-        <b style="font-weight:500">Delhi</b> — 2442, 1st Floor, Gali No. 10, Near Gurudwara, Baidanpura, Karol Bagh, New Delhi – 110005<br />
-        <b style="font-weight:500">Chennai</b> — 501 A, Siva Building, Opp. Joy Alukkas, Krishnan Road, Off North Usman Road, T. Nagar, Chennai – 600017<br />
-        <a class="text-link" href="locations.html" style="margin-top:8px;display:inline-block">All locations</a></p>
-      </div>
-      <div class="c-block">
-        <h4>Follow</h4>
-        <p><a href="https://instagram.com/mani.jewel" target="_blank" rel="noopener">Instagram</a> · <a href="https://in.linkedin.com/company/mani-jewels" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.facebook.com/manijeweldiamondjewellery" target="_blank" rel="noopener">Facebook</a></p>
-      </div>
-    </aside>
-
-    <form class="contact-form reveal reveal-d1" onsubmit="event.preventDefault();this.innerHTML='<div style=&quot;text-align:center;padding:60px 20px&quot;><p class=&quot;h-md&quot; style=&quot;font-family:var(--font-display)&quot;>Thank you.</p><p class=&quot;lede&quot; style=&quot;margin-top:12px&quot;>Your enquiry is with the house — we will reply within the same working day.</p></div>'">
-      <div class="f-row">
-        <div class="f-field"><label for="fn">First name</label><input id="fn" type="text" required /></div>
-        <div class="f-field"><label for="ln">Last name</label><input id="ln" type="text" required /></div>
-      </div>
-      <div class="f-row">
-        <div class="f-field"><label for="em">Email</label><input id="em" type="email" required /></div>
-        <div class="f-field"><label for="ph">Phone</label><input id="ph" type="tel" /></div>
-      </div>
-      <div class="f-row">
-        <div class="f-field"><label for="cty">City</label><input id="cty" type="text" placeholder="We cater all across India" /></div>
-        <div class="f-field"><label for="sub">Enquiry type</label>
-          <select id="sub">
-            <option>Wholesale programme</option>
-            <option>Custom commission</option>
-            <option>Become a retail partner</option>
-            <option>Request the current stock sheet</option>
-            <option>Request the full catalogue</option>
-            <option>Press &amp; media</option>
-            <option>Careers</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-      <div class="f-field"><label for="msg">Message</label><textarea id="msg" placeholder="Tell us about the collection you have in mind…" required></textarea></div>
-      <button class="btn btn-primary" type="submit" style="align-self:flex-start">Send enquiry <span class="arrow">→</span></button>
-      <p class="small">By writing to us you agree to be contacted about your enquiry. We never share your details.</p>
-    </form>
+<!-- INTEGRATION RIBBON -->
+<section class="section band-mist" style="padding-top:64px;padding-bottom:72px">
+  <div class="container">
+    <div class="section-head center" style="margin-bottom:44px">
+      <span class="eyebrow center reveal">One house, the whole journey</span>
+      <h2 class="h-xl reveal reveal-d1">Rough stone <em>to retail counter.</em></h2>
+    </div>
+    <div class="ribbon-flow reveal">
+      <div class="rib-step"><div><b>Rough Stone</b><span>Sourced through Kimberley Process channels</span></div></div>
+      <div class="rib-step"><div><b>Cut &amp; Polish</b><span>Mani Empire, Surat — the house's own wheels</span></div></div>
+      <div class="rib-step"><div><b>Grade &amp; Certify</b><span>In-house grading, Sarin planning, certified stones</span></div></div>
+      <div class="rib-step"><div><b>Design &amp; Make</b><span>Mani Designs studio and the Mani World factory</span></div></div>
+      <div class="rib-step"><div><b>Your Counter</b><span>Insured, documented delivery — anywhere in India</span></div></div>
+    </div>
+    <p class="lede reveal reveal-d2" style="text-align:center;margin:44px auto 0">No middlemen, no outsourced steps. The advantage of every stage passes straight to your margin.</p>
   </div>
 </section>
 
+<!-- FOUR ANSWERS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">The four questions every buyer asks</span>
+      <h2 class="h-xl reveal reveal-d1">Answered, <em>upfront.</em></h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal"><i>— I · "Can you hold my price?"</i><h3>Integrated value</h3><p>Vertically integrated from rough stone to finished piece, the house passes the advantage of in-house cutting, grading and manufacture directly to its partners. One margin, not four.</p></div>
+      <div class="pillar reveal reveal-d1"><i>— II · "Can I trust the supply?"</i><h3>Peace of mind</h3><p>Every step is documented and openly shared — traceable origins, ISO 9001 process discipline, BIS hallmarked gold and certified stones on every piece, since 1966.</p></div>
+      <div class="pillar reveal"><i>— III · "Who do I actually talk to?"</i><h3>One dedicated desk</h3><p>Every partner gets a named representative and a direct line — for orders, follow-ups, repairs and re-orders. Five decades of diamond mastery inform every consultation.</p></div>
+      <div class="pillar reveal reveal-d1"><i>— IV · "Will the assortment keep up?"</i><h3>Depth that refreshes</h3><p>Ten families across four collections, hundreds of live styles with codes and weights, new designs every season — and a custom programme when you want something no one else has.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WAYS TO WORK -->
+<section class="section band-ivory">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">Ways to work with the house</span>
+      <h2 class="h-xl reveal reveal-d1">Three doors <em>in.</em></h2>
+    </div>
+    <div class="value-grid">
+      <div class="value-card reveal" style="text-align:left;align-items:flex-start">
+        <span class="eyebrow">01</span>
+        <h3>Wholesale programme</h3>
+        <p>Buy from the live catalogue — hundreds of styles with codes, metal weights and diamond weights, sized from a single tray to a season's stock.</p>
+        <a class="text-link" href="products.html">Browse the catalogue</a>
+      </div>
+      <div class="value-card reveal reveal-d1" style="text-align:left;align-items:flex-start">
+        <span class="eyebrow">02</span>
+        <h3>Custom &amp; commission</h3>
+        <p>Bring a drawing, a photograph or an idea — our four-step customisation service takes it from sketch to invoice with complete clarity.</p>
+        <a class="text-link" href="maniworld.html">See how it's made</a>
+      </div>
+      <div class="value-card reveal reveal-d2" style="text-align:left;align-items:flex-start">
+        <span class="eyebrow">03</span>
+        <h3>Private label</h3>
+        <p>Your own-brand collection, made by the house — design, manufacture, branding and packaging, delivered retail-ready under your name.</p>
+        <a class="text-link" href="services.html">All eight services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STOCK SHEET CTA -->
+<section class="section band-ink on-dark">
+  <div class="container cta-band">
+    <div>
+      <span class="eyebrow light reveal">This month's stock</span>
+      <h2 class="h-xl reveal reveal-d1" style="color:#fff">Request the current<br /><em>stock sheet.</em></h2>
+      <p class="lede reveal reveal-d2">A dated sheet of live styles and available stock, with codes and weights — sent to serious buyers on request, updated monthly.</p>
+    </div>
+    <div class="cta-actions reveal reveal-d2">
+      <a class="btn btn-blue" href="contact.html?type=stock%20sheet">Request the stock sheet <span class="arrow">→</span></a>
+      <p class="small" style="margin-top:16px;color:rgba(255,255,255,.5)">Questions first? <a href="faq.html" style="color:var(--mani-blue)">Read the partner FAQ</a></p>
+    </div>
+  </div>
+</section>
 <footer class="footer">
   <div class="footer-glow"></div>
   <div class="footer-top">
